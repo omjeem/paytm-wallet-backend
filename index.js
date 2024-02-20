@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 app.use(cors())
 app.use(express.json())
 dotenv.config({ path: "./config.env" }); 
-const PORT = process.env.PORT || 3000
+const PORT =  3000
 
 const userRoute = require("./routes/index");
 app.use("/api/v1", userRoute);
